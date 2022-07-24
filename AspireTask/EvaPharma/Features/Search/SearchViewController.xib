@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="EvaPharmaTask" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="sxh-cD-6hf" customClass="SearchViewController" customModule="EvaPharmaTask" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="ILM-cz-sHb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Movie" translatesAutoresizingMaskIntoConstraints="NO" id="GDD-tV-gck">
+                        <rect key="frame" x="20" y="98" width="374" height="51"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </searchBar>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve0-7u-53S">
+                        <rect key="frame" x="175" y="54" width="64.5" height="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" name="MainColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Hhj-SS-yW6">
+                        <rect key="frame" x="20" y="159" width="374" height="683"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dXc-8R-nkO">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="e8f-8s-KaH"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="ve0-7u-53S" firstAttribute="top" secondItem="e8f-8s-KaH" secondAttribute="top" constant="10" id="2u3-SG-deI"/>
+                    <constraint firstItem="GDD-tV-gck" firstAttribute="top" secondItem="ve0-7u-53S" secondAttribute="bottom" constant="20" id="98W-Xe-XtX"/>
+                    <constraint firstItem="e8f-8s-KaH" firstAttribute="trailing" secondItem="Hhj-SS-yW6" secondAttribute="trailing" constant="20" id="GAo-cQ-2QM"/>
+                    <constraint firstItem="Hhj-SS-yW6" firstAttribute="leading" secondItem="e8f-8s-KaH" secondAttribute="leading" constant="20" id="HlE-FQ-0ZH"/>
+                    <constraint firstItem="e8f-8s-KaH" firstAttribute="bottom" secondItem="Hhj-SS-yW6" secondAttribute="bottom" constant="20" id="JUc-pV-Wcw"/>
+                    <constraint firstItem="GDD-tV-gck" firstAttribute="leading" secondItem="e8f-8s-KaH" secondAttribute="leading" constant="20" id="S5h-Of-K3X"/>
+                    <constraint firstItem="ve0-7u-53S" firstAttribute="centerX" secondItem="ILM-cz-sHb" secondAttribute="centerX" id="Z1o-5o-adF"/>
+                    <constraint firstItem="Hhj-SS-yW6" firstAttribute="top" secondItem="GDD-tV-gck" secondAttribute="bottom" constant="10" id="Zuv-fo-RqN"/>
+                    <constraint firstItem="e8f-8s-KaH" firstAttribute="trailing" secondItem="GDD-tV-gck" secondAttribute="trailing" constant="20" id="xZP-ax-w8J"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="moviesCollectionView" destination="Hhj-SS-yW6" id="7bB-ne-ulE"/>
+                <outlet property="searchBar" destination="GDD-tV-gck" id="IR3-Hr-7ij"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="48.883928571428569"/>
+        </viewController>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.019999999552965164" green="0.18400000035762787" blue="0.33300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

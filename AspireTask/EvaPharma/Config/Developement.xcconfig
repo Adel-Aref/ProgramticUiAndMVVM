@@ -1,0 +1,16 @@
+//
+//  Developement.xcconfig
+//  AspireTask
+//
+//  Created by Adel Aref on 08/09/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-AspireTask/Pods-AspireTask.dev.xcconfig"
+// Server URL we will update this values as received from backend team
+Base_URL = https:/$()/api.themoviedb.org/3
+
+// App Settings
+APP_NAME = AspireTask (dev)
+APP_BUNDLE_ID = com.EvaPharma.Task

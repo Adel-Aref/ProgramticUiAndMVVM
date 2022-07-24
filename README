@@ -1,0 +1,11 @@
+This task developed in swift using 
+
+1- SwiftLint for linting and code formatte  
+2- R for handle resources like assets, fonts and colors 
+3- RXswift and RXCocoa
+4- used abstracted network layer and cacher strategy 
+5- MVVM and repository design pattern 
+6- Realm for local database handling 
+7- configuration environment 
+- you can pull to refresh 
+- 

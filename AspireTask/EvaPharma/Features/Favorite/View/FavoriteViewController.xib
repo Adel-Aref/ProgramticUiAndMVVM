@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FavoriteViewController" customModule="EvaPharmaTask" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="KIg-kP-Jto" customClass="FavoriteViewController" customModule="EvaPharmaTask" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="ZqW-cc-4rt">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxp-cK-D0u">
+                        <rect key="frame" x="150" y="54" width="114" height="24"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" name="MainColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="o7K-8i-hz6">
+                        <rect key="frame" x="20" y="98" width="374" height="744"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wjU-QF-BTD">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <viewLayoutGuide key="safeArea" id="2KV-VO-ujn"/>
+                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="fxp-cK-D0u" firstAttribute="top" secondItem="2KV-VO-ujn" secondAttribute="top" constant="10" id="0PJ-nF-t5Q"/>
+                    <constraint firstItem="o7K-8i-hz6" firstAttribute="top" secondItem="fxp-cK-D0u" secondAttribute="bottom" constant="20" id="IN2-WI-VlC"/>
+                    <constraint firstItem="2KV-VO-ujn" firstAttribute="trailing" secondItem="o7K-8i-hz6" secondAttribute="trailing" constant="20" id="JW0-6D-0F9"/>
+                    <constraint firstItem="2KV-VO-ujn" firstAttribute="bottom" secondItem="o7K-8i-hz6" secondAttribute="bottom" constant="20" id="RKd-28-IWd"/>
+                    <constraint firstItem="o7K-8i-hz6" firstAttribute="leading" secondItem="2KV-VO-ujn" secondAttribute="leading" constant="20" id="dGt-Qt-dCo"/>
+                    <constraint firstItem="fxp-cK-D0u" firstAttribute="centerX" secondItem="ZqW-cc-4rt" secondAttribute="centerX" id="g6m-et-IIc"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="moviesCollectionView" destination="o7K-8i-hz6" id="yeC-26-qBx"/>
+            </connections>
+            <point key="canvasLocation" x="161" y="49"/>
+        </viewController>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.019607843137254902" green="0.18431372549019609" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

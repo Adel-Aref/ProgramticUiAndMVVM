@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (5.4.3)
+  - ESPullToRefresh (2.9.3)
+  - Instructions (2.0.1)
+  - Kingfisher (4.1.0)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - Realm (10.14.0):
+    - Realm/Headers (= 10.14.0)
+  - Realm/Headers (10.14.0)
+  - RealmSwift (10.14.0):
+    - Realm (= 10.14.0)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SwiftLint (0.43.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESPullToRefresh
+  - Instructions (~> 2.0.0)
+  - Kingfisher (= 4.1.0)
+  - R.swift
+  - RealmSwift (~> 10)
+  - RxCocoa
+  - RxSwift
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESPullToRefresh
+    - Instructions
+    - Kingfisher
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  Instructions: dd428e3776fcdcec18bf4242b9d3fb2d1cbd6cc9
+  Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  Realm: 95a120db10fa66d0f1d10bee4ce828177ae00090
+  RealmSwift: 4937e1b6f9b87bc25dc23883198807bf69e8cb76
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
+
+PODFILE CHECKSUM: 952f3f1987a117fd385818adb71f7091a4954bac
+
+COCOAPODS: 1.11.0.beta.1

@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		439A546B1D521290523057DF /* Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E5AF088747E643A5A3D23A3 /* Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework */; };
+		8B5687F644E57E5ED998E02D /* Pods_EvaPharmaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0294B26D16B1917DBD3EB19 /* Pods_EvaPharmaTask.framework */; };
+		C443E8BBD646B27AD4FAAFBB /* Pods_EvaPharmaTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1EB7CC33C9CE62B2F186E5 /* Pods_EvaPharmaTaskTests.framework */; };
+		CE539CCF26EA40ED00723A42 /* RealmHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE539CCE26EA40ED00723A42 /* RealmHandler.swift */; };
+		CE539CD326EA4C9A00723A42 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE539CD126EA4C9A00723A42 /* FavoriteViewController.swift */; };
+		CE539CD426EA4C9A00723A42 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE539CD226EA4C9A00723A42 /* FavoriteViewController.xib */; };
+		CE539CD826EA4D2500723A42 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE539CD726EA4D2500723A42 /* FavoriteViewModel.swift */; };
+		CE539CDC26EA56BE00723A42 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE539CDA26EA56BE00723A42 /* MovieDetailsViewController.swift */; };
+		CE539CDD26EA56BE00723A42 /* MovieDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE539CDB26EA56BE00723A42 /* MovieDetailsViewController.xib */; };
+		CE5DDA6326E959A7004D0A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA6226E959A7004D0A3B /* AppDelegate.swift */; };
+		CE5DDA6726E959A7004D0A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA6626E959A7004D0A3B /* ViewController.swift */; };
+		CE5DDA6A26E959A7004D0A3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDA6826E959A7004D0A3B /* Main.storyboard */; };
+		CE5DDA6C26E959A8004D0A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDA6B26E959A8004D0A3B /* Assets.xcassets */; };
+		CE5DDA6F26E959A8004D0A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDA6D26E959A8004D0A3B /* LaunchScreen.storyboard */; };
+		CE5DDA7A26E959A9004D0A3B /* EvaPharmaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA7926E959A9004D0A3B /* EvaPharmaTaskTests.swift */; };
+		CE5DDA8526E959A9004D0A3B /* EvaPharmaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA8426E959A9004D0A3B /* EvaPharmaTaskUITests.swift */; };
+		CE5DDA9426E95BF2004D0A3B /* Casher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA9326E95BF2004D0A3B /* Casher.swift */; };
+		CE5DDAA326E95CEF004D0A3B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDA9F26E95CEF004D0A3B /* NetworkClient.swift */; };
+		CE5DDAA426E95CEF004D0A3B /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA026E95CEF004D0A3B /* RequestResult.swift */; };
+		CE5DDAA526E95CEF004D0A3B /* LocalClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA126E95CEF004D0A3B /* LocalClient.swift */; };
+		CE5DDAA626E95CEF004D0A3B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA226E95CEF004D0A3B /* APIRouter.swift */; };
+		CE5DDAAB26E95D01004D0A3B /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA726E95D00004D0A3B /* Environment.swift */; };
+		CE5DDAAC26E95D01004D0A3B /* NETWORK+ENDPOINTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA826E95D00004D0A3B /* NETWORK+ENDPOINTS.swift */; };
+		CE5DDAAD26E95D01004D0A3B /* MagixResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAA926E95D01004D0A3B /* MagixResponse.swift */; };
+		CE5DDAAE26E95D01004D0A3B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAAA26E95D01004D0A3B /* Repository.swift */; };
+		CE5DDAB126E95D0F004D0A3B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAAF26E95D0F004D0A3B /* R.generated.swift */; };
+		CE5DDAB226E95D0F004D0A3B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDAB026E95D0F004D0A3B /* .swiftlint.yml */; };
+		CE5DDAB826E95D26004D0A3B /* Developement.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDAB526E95D26004D0A3B /* Developement.xcconfig */; };
+		CE5DDAC226E95D53004D0A3B /* StoryBoardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAB926E95D52004D0A3B /* StoryBoardExtension.swift */; };
+		CE5DDAC326E95D53004D0A3B /* UINavigationController+removeLastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABA26E95D52004D0A3B /* UINavigationController+removeLastView.swift */; };
+		CE5DDAC426E95D53004D0A3B /* UIApplicatio+topView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABB26E95D52004D0A3B /* UIApplicatio+topView.swift */; };
+		CE5DDAC526E95D53004D0A3B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABC26E95D52004D0A3B /* UIView+Extension.swift */; };
+		CE5DDAC626E95D53004D0A3B /* UIView+RoundCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABD26E95D52004D0A3B /* UIView+RoundCorners.swift */; };
+		CE5DDAC726E95D53004D0A3B /* Designable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABE26E95D52004D0A3B /* Designable.swift */; };
+		CE5DDAC826E95D53004D0A3B /* Reactive+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDABF26E95D52004D0A3B /* Reactive+Loading.swift */; };
+		CE5DDAC926E95D53004D0A3B /* Reactive+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAC026E95D52004D0A3B /* Reactive+Error.swift */; };
+		CE5DDACA26E95D53004D0A3B /* UserDefaults+States.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAC126E95D53004D0A3B /* UserDefaults+States.swift */; };
+		CE5DDACC26E95D6F004D0A3B /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDACB26E95D6F004D0A3B /* BaseController.swift */; };
+		CE5DDAD226E95D7F004D0A3B /* AnimateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDACD26E95D7F004D0A3B /* AnimateLoadingView.swift */; };
+		CE5DDAD326E95D7F004D0A3B /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDACE26E95D7F004D0A3B /* LoadingViewable.swift */; };
+		CE5DDAD426E95D80004D0A3B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDACF26E95D7F004D0A3B /* LoadingView.swift */; };
+		CE5DDAD526E95D80004D0A3B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDAD026E95D7F004D0A3B /* LoadingView.xib */; };
+		CE5DDAD626E95D80004D0A3B /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAD126E95D7F004D0A3B /* IndicatorView.swift */; };
+		CE5DDAD926E95D91004D0A3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAD726E95D91004D0A3B /* TabBarController.swift */; };
+		CE5DDADA26E95D91004D0A3B /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAD826E95D91004D0A3B /* TabBarItem.swift */; };
+		CE5DDADC26E964BA004D0A3B /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDADB26E964BA004D0A3B /* EndPoint.swift */; };
+		CE5DDAE026E970F2004D0A3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDADE26E970F2004D0A3B /* HomeViewController.swift */; };
+		CE5DDAE126E970F2004D0A3B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDADF26E970F2004D0A3B /* HomeViewController.xib */; };
+		CE5DDAE926E97508004D0A3B /* MovieCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAE726E97508004D0A3B /* MovieCollectionCell.swift */; };
+		CE5DDAEA26E97508004D0A3B /* MovieCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDAE826E97508004D0A3B /* MovieCollectionCell.xib */; };
+		CE5DDAEC26E97E41004D0A3B /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAEB26E97E41004D0A3B /* MovieViewModel.swift */; };
+		CE5DDAEF26E97F14004D0A3B /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAEE26E97F14004D0A3B /* Protocols.swift */; };
+		CE5DDAF326E98F1C004D0A3B /* MoviesRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAF226E98F1B004D0A3B /* MoviesRepo.swift */; };
+		CE5DDAF526E98F82004D0A3B /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAF426E98F82004D0A3B /* MovieModel.swift */; };
+		CE5DDAF726E99324004D0A3B /* TableView+RegisterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAF626E99324004D0A3B /* TableView+RegisterCell.swift */; };
+		CE5DDAF926E993EA004D0A3B /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAF826E993EA004D0A3B /* CollectionView.swift */; };
+		CE5DDAFB26E995BD004D0A3B /* ViewController+DismisTouching.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDAFA26E995BD004D0A3B /* ViewController+DismisTouching.swift */; };
+		CE602480271719F3007EDAD1 /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60247F271719F3007EDAD1 /* TopRatedViewController.swift */; };
+		CE60248227171B1B007EDAD1 /* ProgramticUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60248127171B1A007EDAD1 /* ProgramticUICell.swift */; };
+		CE6024842717208B007EDAD1 /* BsaeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6024832717208B007EDAD1 /* BsaeCell.swift */; };
+		CE8F5B2B26E9A397006A4694 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8F5B2926E9A397006A4694 /* SearchViewController.swift */; };
+		CE8F5B2C26E9A397006A4694 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8F5B2A26E9A397006A4694 /* SearchViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE5DDA7626E959A9004D0A3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5DDA5726E959A7004D0A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5DDA5E26E959A7004D0A3B;
+			remoteInfo = EvaPharmaTask;
+		};
+		CE5DDA8126E959A9004D0A3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5DDA5726E959A7004D0A3B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5DDA5E26E959A7004D0A3B;
+			remoteInfo = EvaPharmaTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		197FCD07504E116B33C53E10 /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask-EvaPharmaTaskUITests.development.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests.development.xcconfig"; sourceTree = "<group>"; };
+		2C691A2B53FC69F2967CE792 /* Pods-EvaPharmaTaskTests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTaskTests.dev.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTaskTests/Pods-EvaPharmaTaskTests.dev.xcconfig"; sourceTree = "<group>"; };
+		3A1EB7CC33C9CE62B2F186E5 /* Pods_EvaPharmaTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvaPharmaTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8ED2066461010739DDFCDF /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask-EvaPharmaTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45CA66289F3ACF2F07309C56 /* Pods-EvaPharmaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask.release.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask.release.xcconfig"; sourceTree = "<group>"; };
+		560DB7AFEAD79BFC9224731F /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask-EvaPharmaTaskUITests.dev.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests.dev.xcconfig"; sourceTree = "<group>"; };
+		8E4140D4A5370F95F8C78109 /* Pods-EvaPharmaTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTaskTests.release.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTaskTests/Pods-EvaPharmaTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		94F0013624A80CA87A36C752 /* Pods-EvaPharmaTaskTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTaskTests.development.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTaskTests/Pods-EvaPharmaTaskTests.development.xcconfig"; sourceTree = "<group>"; };
+		9B8193C6A2E4EF9FC3BE26C3 /* Pods-EvaPharmaTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTaskTests/Pods-EvaPharmaTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5AF088747E643A5A3D23A3 /* Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0294B26D16B1917DBD3EB19 /* Pods_EvaPharmaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EvaPharmaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF7C73DA7A9C378515091013 /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask-EvaPharmaTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8AAAB0CCE69B19969A8BD53 /* Pods-EvaPharmaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask.debug.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		CE539CCE26EA40ED00723A42 /* RealmHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHandler.swift; sourceTree = "<group>"; };
+		CE539CD126EA4C9A00723A42 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		CE539CD226EA4C9A00723A42 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		CE539CD726EA4D2500723A42 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		CE539CDA26EA56BE00723A42 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		CE539CDB26EA56BE00723A42 /* MovieDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailsViewController.xib; sourceTree = "<group>"; };
+		CE5DDA5F26E959A7004D0A3B /* EvaPharmaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaPharmaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DDA6226E959A7004D0A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE5DDA6626E959A7004D0A3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5DDA6926E959A7004D0A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5DDA6B26E959A8004D0A3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5DDA6E26E959A8004D0A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5DDA7026E959A8004D0A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5DDA7526E959A9004D0A3B /* EvaPharmaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvaPharmaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DDA7926E959A9004D0A3B /* EvaPharmaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaPharmaTaskTests.swift; sourceTree = "<group>"; };
+		CE5DDA7B26E959A9004D0A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5DDA8026E959A9004D0A3B /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5DDA8426E959A9004D0A3B /* EvaPharmaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaPharmaTaskUITests.swift; sourceTree = "<group>"; };
+		CE5DDA8626E959A9004D0A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5DDA9326E95BF2004D0A3B /* Casher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Casher.swift; sourceTree = "<group>"; };
+		CE5DDA9F26E95CEF004D0A3B /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		CE5DDAA026E95CEF004D0A3B /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestResult.swift; sourceTree = "<group>"; };
+		CE5DDAA126E95CEF004D0A3B /* LocalClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalClient.swift; sourceTree = "<group>"; };
+		CE5DDAA226E95CEF004D0A3B /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		CE5DDAA726E95D00004D0A3B /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CE5DDAA826E95D00004D0A3B /* NETWORK+ENDPOINTS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NETWORK+ENDPOINTS.swift"; sourceTree = "<group>"; };
+		CE5DDAA926E95D01004D0A3B /* MagixResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagixResponse.swift; sourceTree = "<group>"; };
+		CE5DDAAA26E95D01004D0A3B /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CE5DDAAF26E95D0F004D0A3B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		CE5DDAB026E95D0F004D0A3B /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CE5DDAB526E95D26004D0A3B /* Developement.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developement.xcconfig; sourceTree = "<group>"; };
+		CE5DDAB926E95D52004D0A3B /* StoryBoardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardExtension.swift; sourceTree = "<group>"; };
+		CE5DDABA26E95D52004D0A3B /* UINavigationController+removeLastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+removeLastView.swift"; sourceTree = "<group>"; };
+		CE5DDABB26E95D52004D0A3B /* UIApplicatio+topView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplicatio+topView.swift"; sourceTree = "<group>"; };
+		CE5DDABC26E95D52004D0A3B /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		CE5DDABD26E95D52004D0A3B /* UIView+RoundCorners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorners.swift"; sourceTree = "<group>"; };
+		CE5DDABE26E95D52004D0A3B /* Designable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Designable.swift; sourceTree = "<group>"; };
+		CE5DDABF26E95D52004D0A3B /* Reactive+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Loading.swift"; sourceTree = "<group>"; };
+		CE5DDAC026E95D52004D0A3B /* Reactive+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Error.swift"; sourceTree = "<group>"; };
+		CE5DDAC126E95D53004D0A3B /* UserDefaults+States.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+States.swift"; sourceTree = "<group>"; };
+		CE5DDACB26E95D6F004D0A3B /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		CE5DDACD26E95D7F004D0A3B /* AnimateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateLoadingView.swift; sourceTree = "<group>"; };
+		CE5DDACE26E95D7F004D0A3B /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
+		CE5DDACF26E95D7F004D0A3B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		CE5DDAD026E95D7F004D0A3B /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		CE5DDAD126E95D7F004D0A3B /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		CE5DDAD726E95D91004D0A3B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CE5DDAD826E95D91004D0A3B /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		CE5DDADB26E964BA004D0A3B /* EndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		CE5DDADE26E970F2004D0A3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CE5DDADF26E970F2004D0A3B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CE5DDAE726E97508004D0A3B /* MovieCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionCell.swift; sourceTree = "<group>"; };
+		CE5DDAE826E97508004D0A3B /* MovieCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionCell.xib; sourceTree = "<group>"; };
+		CE5DDAEB26E97E41004D0A3B /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		CE5DDAEE26E97F14004D0A3B /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CE5DDAF226E98F1B004D0A3B /* MoviesRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesRepo.swift; sourceTree = "<group>"; };
+		CE5DDAF426E98F82004D0A3B /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		CE5DDAF626E99324004D0A3B /* TableView+RegisterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableView+RegisterCell.swift"; sourceTree = "<group>"; };
+		CE5DDAF826E993EA004D0A3B /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		CE5DDAFA26E995BD004D0A3B /* ViewController+DismisTouching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+DismisTouching.swift"; sourceTree = "<group>"; };
+		CE60247F271719F3007EDAD1 /* TopRatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
+		CE60248127171B1A007EDAD1 /* ProgramticUICell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramticUICell.swift; sourceTree = "<group>"; };
+		CE6024832717208B007EDAD1 /* BsaeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BsaeCell.swift; sourceTree = "<group>"; };
+		CE8F5B2926E9A397006A4694 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CE8F5B2A26E9A397006A4694 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		D6E67B5D72E4D2BF71554429 /* Pods-EvaPharmaTask.dev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask.dev.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask.dev.xcconfig"; sourceTree = "<group>"; };
+		E735B57D8E4A89C95EAA3DAC /* Pods-EvaPharmaTask.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EvaPharmaTask.development.xcconfig"; path = "Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask.development.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5DDA5C26E959A7004D0A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B5687F644E57E5ED998E02D /* Pods_EvaPharmaTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7226E959A9004D0A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C443E8BBD646B27AD4FAAFBB /* Pods_EvaPharmaTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7D26E959A9004D0A3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				439A546B1D521290523057DF /* Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D2907BCB8743DBAE9EF55C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0294B26D16B1917DBD3EB19 /* Pods_EvaPharmaTask.framework */,
+				9E5AF088747E643A5A3D23A3 /* Pods_EvaPharmaTask_EvaPharmaTaskUITests.framework */,
+				3A1EB7CC33C9CE62B2F186E5 /* Pods_EvaPharmaTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE539CD026EA4C8300723A42 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				CE539CD626EA4D1600723A42 /* ViewModel */,
+				CE539CD526EA4D0800723A42 /* View */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		CE539CD526EA4D0800723A42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE539CD126EA4C9A00723A42 /* FavoriteViewController.swift */,
+				CE539CD226EA4C9A00723A42 /* FavoriteViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE539CD626EA4D1600723A42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE539CD726EA4D2500723A42 /* FavoriteViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE539CD926EA55F700723A42 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				CE539CDA26EA56BE00723A42 /* MovieDetailsViewController.swift */,
+				CE539CDB26EA56BE00723A42 /* MovieDetailsViewController.xib */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		CE5DDA5626E959A7004D0A3B = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAB026E95D0F004D0A3B /* .swiftlint.yml */,
+				CE5DDAAF26E95D0F004D0A3B /* R.generated.swift */,
+				CE5DDA6126E959A7004D0A3B /* AspireTask */,
+				CE5DDA7826E959A9004D0A3B /* AspireTaskTests */,
+				CE5DDA8326E959A9004D0A3B /* AspireTaskUITests */,
+				CE5DDA6026E959A7004D0A3B /* Products */,
+				CF1730AE52F7D554A89DF8ED /* Pods */,
+				3D2907BCB8743DBAE9EF55C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5DDA6026E959A7004D0A3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA5F26E959A7004D0A3B /* EvaPharmaTask.app */,
+				CE5DDA7526E959A9004D0A3B /* EvaPharmaTaskTests.xctest */,
+				CE5DDA8026E959A9004D0A3B /* .xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5DDA6126E959A7004D0A3B /* AspireTask */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA9226E95BDB004D0A3B /* Cacher */,
+				CE5DDA9526E95C11004D0A3B /* Network */,
+				CE5DDA9626E95C20004D0A3B /* Repository */,
+				CE5DDA9826E95C4D004D0A3B /* EvaPharma */,
+				CE5DDA6226E959A7004D0A3B /* AppDelegate.swift */,
+				CE5DDA6626E959A7004D0A3B /* ViewController.swift */,
+				CE5DDA6826E959A7004D0A3B /* Main.storyboard */,
+				CE5DDA6B26E959A8004D0A3B /* Assets.xcassets */,
+				CE5DDA6D26E959A8004D0A3B /* LaunchScreen.storyboard */,
+				CE5DDA7026E959A8004D0A3B /* Info.plist */,
+			);
+			path = AspireTask;
+			sourceTree = "<group>";
+		};
+		CE5DDA7826E959A9004D0A3B /* AspireTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA7926E959A9004D0A3B /* EvaPharmaTaskTests.swift */,
+				CE5DDA7B26E959A9004D0A3B /* Info.plist */,
+			);
+			path = AspireTaskTests;
+			sourceTree = "<group>";
+		};
+		CE5DDA8326E959A9004D0A3B /* AspireTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA8426E959A9004D0A3B /* EvaPharmaTaskUITests.swift */,
+				CE5DDA8626E959A9004D0A3B /* Info.plist */,
+			);
+			path = AspireTaskUITests;
+			sourceTree = "<group>";
+		};
+		CE5DDA9226E95BDB004D0A3B /* Cacher */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA9326E95BF2004D0A3B /* Casher.swift */,
+				CE539CCE26EA40ED00723A42 /* RealmHandler.swift */,
+			);
+			path = Cacher;
+			sourceTree = "<group>";
+		};
+		CE5DDA9526E95C11004D0A3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDADB26E964BA004D0A3B /* EndPoint.swift */,
+				CE5DDAA226E95CEF004D0A3B /* APIRouter.swift */,
+				CE5DDAA126E95CEF004D0A3B /* LocalClient.swift */,
+				CE5DDA9F26E95CEF004D0A3B /* NetworkClient.swift */,
+				CE5DDAA026E95CEF004D0A3B /* RequestResult.swift */,
+				CE5DDAA826E95D00004D0A3B /* NETWORK+ENDPOINTS.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CE5DDA9626E95C20004D0A3B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAF126E98EFA004D0A3B /* HomeRepo */,
+				CE5DDAA726E95D00004D0A3B /* Environment.swift */,
+				CE5DDAA926E95D01004D0A3B /* MagixResponse.swift */,
+				CE5DDAAA26E95D01004D0A3B /* Repository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		CE5DDA9826E95C4D004D0A3B /* EvaPharma */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDA9926E95C80004D0A3B /* Features */,
+				CE5DDA9C26E95CA5004D0A3B /* Helper */,
+				CE5DDA9B26E95C9E004D0A3B /* LoadingView */,
+				CE5DDA9A26E95C8B004D0A3B /* TabBar */,
+				CE5DDA9D26E95CAC004D0A3B /* Extentions */,
+				CE5DDAED26E97EF2004D0A3B /* Protocols */,
+				CE5DDA9E26E95CC1004D0A3B /* Config */,
+			);
+			path = EvaPharma;
+			sourceTree = "<group>";
+		};
+		CE5DDA9926E95C80004D0A3B /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAE226E97423004D0A3B /* ReusableNibs */,
+				CE8F5B3226E9A6BE006A4694 /* ViewModel */,
+				CE539CD926EA55F700723A42 /* MovieDetails */,
+				CE539CD026EA4C8300723A42 /* Favorite */,
+				CE8F5B2D26E9A661006A4694 /* TopRated */,
+				CE8F5B2826E9A37E006A4694 /* Search */,
+				CE5DDADD26E970D4004D0A3B /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CE5DDA9A26E95C8B004D0A3B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAD726E95D91004D0A3B /* TabBarController.swift */,
+				CE5DDAD826E95D91004D0A3B /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		CE5DDA9B26E95C9E004D0A3B /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDACD26E95D7F004D0A3B /* AnimateLoadingView.swift */,
+				CE5DDAD126E95D7F004D0A3B /* IndicatorView.swift */,
+				CE5DDACF26E95D7F004D0A3B /* LoadingView.swift */,
+				CE5DDAD026E95D7F004D0A3B /* LoadingView.xib */,
+				CE5DDACE26E95D7F004D0A3B /* LoadingViewable.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		CE5DDA9C26E95CA5004D0A3B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDACB26E95D6F004D0A3B /* BaseController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE5DDA9D26E95CAC004D0A3B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDABE26E95D52004D0A3B /* Designable.swift */,
+				CE5DDAC026E95D52004D0A3B /* Reactive+Error.swift */,
+				CE5DDABF26E95D52004D0A3B /* Reactive+Loading.swift */,
+				CE5DDAB926E95D52004D0A3B /* StoryBoardExtension.swift */,
+				CE5DDAFA26E995BD004D0A3B /* ViewController+DismisTouching.swift */,
+				CE5DDAF626E99324004D0A3B /* TableView+RegisterCell.swift */,
+				CE5DDAF826E993EA004D0A3B /* CollectionView.swift */,
+				CE5DDABB26E95D52004D0A3B /* UIApplicatio+topView.swift */,
+				CE5DDABA26E95D52004D0A3B /* UINavigationController+removeLastView.swift */,
+				CE5DDABC26E95D52004D0A3B /* UIView+Extension.swift */,
+				CE5DDABD26E95D52004D0A3B /* UIView+RoundCorners.swift */,
+				CE5DDAC126E95D53004D0A3B /* UserDefaults+States.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		CE5DDA9E26E95CC1004D0A3B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAB526E95D26004D0A3B /* Developement.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		CE5DDADD26E970D4004D0A3B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDADE26E970F2004D0A3B /* HomeViewController.swift */,
+				CE5DDADF26E970F2004D0A3B /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE5DDAE226E97423004D0A3B /* ReusableNibs */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAE726E97508004D0A3B /* MovieCollectionCell.swift */,
+				CE5DDAE826E97508004D0A3B /* MovieCollectionCell.xib */,
+			);
+			path = ReusableNibs;
+			sourceTree = "<group>";
+		};
+		CE5DDAED26E97EF2004D0A3B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAEE26E97F14004D0A3B /* Protocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CE5DDAF126E98EFA004D0A3B /* HomeRepo */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAF226E98F1B004D0A3B /* MoviesRepo.swift */,
+				CE5DDAF426E98F82004D0A3B /* MovieModel.swift */,
+			);
+			path = HomeRepo;
+			sourceTree = "<group>";
+		};
+		CE8F5B2826E9A37E006A4694 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				CE8F5B2926E9A397006A4694 /* SearchViewController.swift */,
+				CE8F5B2A26E9A397006A4694 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		CE8F5B2D26E9A661006A4694 /* TopRated */ = {
+			isa = PBXGroup;
+			children = (
+				CE60248127171B1A007EDAD1 /* ProgramticUICell.swift */,
+				CE6024832717208B007EDAD1 /* BsaeCell.swift */,
+				CE60247F271719F3007EDAD1 /* TopRatedViewController.swift */,
+			);
+			path = TopRated;
+			sourceTree = "<group>";
+		};
+		CE8F5B3226E9A6BE006A4694 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDAEB26E97E41004D0A3B /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CF1730AE52F7D554A89DF8ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8AAAB0CCE69B19969A8BD53 /* Pods-EvaPharmaTask.debug.xcconfig */,
+				45CA66289F3ACF2F07309C56 /* Pods-EvaPharmaTask.release.xcconfig */,
+				3A8ED2066461010739DDFCDF /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.debug.xcconfig */,
+				BF7C73DA7A9C378515091013 /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.release.xcconfig */,
+				9B8193C6A2E4EF9FC3BE26C3 /* Pods-EvaPharmaTaskTests.debug.xcconfig */,
+				8E4140D4A5370F95F8C78109 /* Pods-EvaPharmaTaskTests.release.xcconfig */,
+				D6E67B5D72E4D2BF71554429 /* Pods-EvaPharmaTask.dev.xcconfig */,
+				560DB7AFEAD79BFC9224731F /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.dev.xcconfig */,
+				2C691A2B53FC69F2967CE792 /* Pods-EvaPharmaTaskTests.dev.xcconfig */,
+				E735B57D8E4A89C95EAA3DAC /* Pods-EvaPharmaTask.development.xcconfig */,
+				197FCD07504E116B33C53E10 /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.development.xcconfig */,
+				94F0013624A80CA87A36C752 /* Pods-EvaPharmaTaskTests.development.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5DDA5E26E959A7004D0A3B /* EvaPharmaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5DDA8926E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTask" */;
+			buildPhases = (
+				0D02FA555C023E74B8E2DBF7 /* [CP] Check Pods Manifest.lock */,
+				CE5DDAF026E98275004D0A3B /* ShellScript */,
+				CE5DDA5B26E959A7004D0A3B /* Sources */,
+				CE5DDA5C26E959A7004D0A3B /* Frameworks */,
+				CE5DDA5D26E959A7004D0A3B /* Resources */,
+				A116E76600833883453B2140 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvaPharmaTask;
+			productName = EvaPharmaTask;
+			productReference = CE5DDA5F26E959A7004D0A3B /* EvaPharmaTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE5DDA7426E959A9004D0A3B /* EvaPharmaTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5DDA8C26E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTaskTests" */;
+			buildPhases = (
+				5375D9C6211454A8C40DD4E2 /* [CP] Check Pods Manifest.lock */,
+				CE5DDA7126E959A9004D0A3B /* Sources */,
+				CE5DDA7226E959A9004D0A3B /* Frameworks */,
+				CE5DDA7326E959A9004D0A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5DDA7726E959A9004D0A3B /* PBXTargetDependency */,
+			);
+			name = EvaPharmaTaskTests;
+			productName = EvaPharmaTaskTests;
+			productReference = CE5DDA7526E959A9004D0A3B /* EvaPharmaTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5DDA7F26E959A9004D0A3B /* EvaPharmaTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5DDA8F26E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTaskUITests" */;
+			buildPhases = (
+				1F952CB431DCFFCE2E4EAFA8 /* [CP] Check Pods Manifest.lock */,
+				CE5DDA7C26E959A9004D0A3B /* Sources */,
+				CE5DDA7D26E959A9004D0A3B /* Frameworks */,
+				CE5DDA7E26E959A9004D0A3B /* Resources */,
+				70CD5DD356289123306D51DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5DDA8226E959A9004D0A3B /* PBXTargetDependency */,
+			);
+			name = EvaPharmaTaskUITests;
+			productName = EvaPharmaTaskUITests;
+			productReference = CE5DDA8026E959A9004D0A3B /* .xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5DDA5726E959A7004D0A3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE5DDA5E26E959A7004D0A3B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CE5DDA7426E959A9004D0A3B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE5DDA5E26E959A7004D0A3B;
+					};
+					CE5DDA7F26E959A9004D0A3B = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CE5DDA5E26E959A7004D0A3B;
+					};
+				};
+			};
+			buildConfigurationList = CE5DDA5A26E959A7004D0A3B /* Build configuration list for PBXProject "AspireTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE5DDA5626E959A7004D0A3B;
+			productRefGroup = CE5DDA6026E959A7004D0A3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5DDA5E26E959A7004D0A3B /* EvaPharmaTask */,
+				CE5DDA7426E959A9004D0A3B /* EvaPharmaTaskTests */,
+				CE5DDA7F26E959A9004D0A3B /* EvaPharmaTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5DDA5D26E959A7004D0A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5DDAB226E95D0F004D0A3B /* .swiftlint.yml in Resources */,
+				CE539CD426EA4C9A00723A42 /* FavoriteViewController.xib in Resources */,
+				CE5DDAD526E95D80004D0A3B /* LoadingView.xib in Resources */,
+				CE539CDD26EA56BE00723A42 /* MovieDetailsViewController.xib in Resources */,
+				CE5DDAE126E970F2004D0A3B /* HomeViewController.xib in Resources */,
+				CE5DDA6F26E959A8004D0A3B /* LaunchScreen.storyboard in Resources */,
+				CE5DDA6C26E959A8004D0A3B /* Assets.xcassets in Resources */,
+				CE8F5B2C26E9A397006A4694 /* SearchViewController.xib in Resources */,
+				CE5DDA6A26E959A7004D0A3B /* Main.storyboard in Resources */,
+				CE5DDAEA26E97508004D0A3B /* MovieCollectionCell.xib in Resources */,
+				CE5DDAB826E95D26004D0A3B /* Developement.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7326E959A9004D0A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7E26E959A9004D0A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D02FA555C023E74B8E2DBF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvaPharmaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F952CB431DCFFCE2E4EAFA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvaPharmaTask-EvaPharmaTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5375D9C6211454A8C40DD4E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EvaPharmaTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70CD5DD356289123306D51DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask-EvaPharmaTaskUITests/Pods-EvaPharmaTask-EvaPharmaTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A116E76600833883453B2140 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EvaPharmaTask/Pods-EvaPharmaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE5DDAF026E98275004D0A3B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5DDA5B26E959A7004D0A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5DDAA626E95CEF004D0A3B /* APIRouter.swift in Sources */,
+				CE5DDAD226E95D7F004D0A3B /* AnimateLoadingView.swift in Sources */,
+				CE5DDAAB26E95D01004D0A3B /* Environment.swift in Sources */,
+				CE5DDAEF26E97F14004D0A3B /* Protocols.swift in Sources */,
+				CE5DDAD926E95D91004D0A3B /* TabBarController.swift in Sources */,
+				CE5DDAE026E970F2004D0A3B /* HomeViewController.swift in Sources */,
+				CE5DDAC526E95D53004D0A3B /* UIView+Extension.swift in Sources */,
+				CE5DDAF526E98F82004D0A3B /* MovieModel.swift in Sources */,
+				CE5DDAE926E97508004D0A3B /* MovieCollectionCell.swift in Sources */,
+				CE539CD326EA4C9A00723A42 /* FavoriteViewController.swift in Sources */,
+				CE5DDAA526E95CEF004D0A3B /* LocalClient.swift in Sources */,
+				CE5DDAC226E95D53004D0A3B /* StoryBoardExtension.swift in Sources */,
+				CE5DDAAD26E95D01004D0A3B /* MagixResponse.swift in Sources */,
+				CE60248227171B1B007EDAD1 /* ProgramticUICell.swift in Sources */,
+				CE5DDAA426E95CEF004D0A3B /* RequestResult.swift in Sources */,
+				CE5DDAC326E95D53004D0A3B /* UINavigationController+removeLastView.swift in Sources */,
+				CE539CDC26EA56BE00723A42 /* MovieDetailsViewController.swift in Sources */,
+				CE5DDAC426E95D53004D0A3B /* UIApplicatio+topView.swift in Sources */,
+				CE5DDADC26E964BA004D0A3B /* EndPoint.swift in Sources */,
+				CE5DDAAE26E95D01004D0A3B /* Repository.swift in Sources */,
+				CE5DDAF926E993EA004D0A3B /* CollectionView.swift in Sources */,
+				CE5DDA6726E959A7004D0A3B /* ViewController.swift in Sources */,
+				CE5DDAC726E95D53004D0A3B /* Designable.swift in Sources */,
+				CE5DDAD326E95D7F004D0A3B /* LoadingViewable.swift in Sources */,
+				CE8F5B2B26E9A397006A4694 /* SearchViewController.swift in Sources */,
+				CE5DDAC626E95D53004D0A3B /* UIView+RoundCorners.swift in Sources */,
+				CE5DDA6326E959A7004D0A3B /* AppDelegate.swift in Sources */,
+				CE5DDAF726E99324004D0A3B /* TableView+RegisterCell.swift in Sources */,
+				CE539CD826EA4D2500723A42 /* FavoriteViewModel.swift in Sources */,
+				CE5DDAD626E95D80004D0A3B /* IndicatorView.swift in Sources */,
+				CE5DDAF326E98F1C004D0A3B /* MoviesRepo.swift in Sources */,
+				CE5DDADA26E95D91004D0A3B /* TabBarItem.swift in Sources */,
+				CE6024842717208B007EDAD1 /* BsaeCell.swift in Sources */,
+				CE5DDAAC26E95D01004D0A3B /* NETWORK+ENDPOINTS.swift in Sources */,
+				CE5DDAFB26E995BD004D0A3B /* ViewController+DismisTouching.swift in Sources */,
+				CE5DDAC926E95D53004D0A3B /* Reactive+Error.swift in Sources */,
+				CE602480271719F3007EDAD1 /* TopRatedViewController.swift in Sources */,
+				CE5DDAD426E95D80004D0A3B /* LoadingView.swift in Sources */,
+				CE539CCF26EA40ED00723A42 /* RealmHandler.swift in Sources */,
+				CE5DDA9426E95BF2004D0A3B /* Casher.swift in Sources */,
+				CE5DDACA26E95D53004D0A3B /* UserDefaults+States.swift in Sources */,
+				CE5DDAEC26E97E41004D0A3B /* MovieViewModel.swift in Sources */,
+				CE5DDAC826E95D53004D0A3B /* Reactive+Loading.swift in Sources */,
+				CE5DDAA326E95CEF004D0A3B /* NetworkClient.swift in Sources */,
+				CE5DDACC26E95D6F004D0A3B /* BaseController.swift in Sources */,
+				CE5DDAB126E95D0F004D0A3B /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7126E959A9004D0A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5DDA7A26E959A9004D0A3B /* EvaPharmaTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5DDA7C26E959A9004D0A3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5DDA8526E959A9004D0A3B /* EvaPharmaTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE5DDA7726E959A9004D0A3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5DDA5E26E959A7004D0A3B /* EvaPharmaTask */;
+			targetProxy = CE5DDA7626E959A9004D0A3B /* PBXContainerItemProxy */;
+		};
+		CE5DDA8226E959A9004D0A3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5DDA5E26E959A7004D0A3B /* EvaPharmaTask */;
+			targetProxy = CE5DDA8126E959A9004D0A3B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE5DDA6826E959A7004D0A3B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5DDA6926E959A7004D0A3B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5DDA6D26E959A8004D0A3B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5DDA6E26E959A8004D0A3B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE539CDE26EC279300723A42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5DDAB526E95D26004D0A3B /* Developement.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Development;
+		};
+		CE539CDF26EC279300723A42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E735B57D8E4A89C95EAA3DAC /* Pods-EvaPharmaTask.development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C5GA3P469;
+				INFOPLIST_FILE = EvaPharmaTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EvaPharma.Task;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		CE539CE026EC279300723A42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F0013624A80CA87A36C752 /* Pods-EvaPharmaTaskTests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C5GA3P469;
+				INFOPLIST_FILE = EvaPharmaTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.EVA.Realm-iOS.EvaPharmaTaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvaPharmaTask.app/EvaPharmaTask";
+			};
+			name = Development;
+		};
+		CE539CE126EC279300723A42 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197FCD07504E116B33C53E10 /* Pods-EvaPharmaTask-EvaPharmaTaskUITests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2C5GA3P469;
+				INFOPLIST_FILE = EvaPharmaTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_NAME = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EvaPharmaTask;
+			};
+			name = Development;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5DDA5A26E959A7004D0A3B /* Build configuration list for PBXProject "AspireTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE539CDE26EC279300723A42 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		CE5DDA8926E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE539CDF26EC279300723A42 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		CE5DDA8C26E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE539CE026EC279300723A42 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		CE5DDA8F26E959A9004D0A3B /* Build configuration list for PBXNativeTarget "EvaPharmaTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE539CE126EC279300723A42 /* Development */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5DDA5726E959A7004D0A3B /* Project object */;
+}
